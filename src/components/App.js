@@ -5,17 +5,18 @@ import Child from "./Child";
 const App = () => {
 
   let [showModal,setShowModal] = useState(false);
+  console.log(showModal);
   return (
     <div>
         <div className="parent">
             <h1>Parent Component</h1>
             <Child ModalState = {setShowModal}>
-              if (showModal) {
+              {/* if (showModal) {
                 <div>
                 <h2>Modal Content</h2>
                 <p>This is the modal content.</p>
                 </div>
-              }
+              } */}
               </Child>
         </div>
     </div>
